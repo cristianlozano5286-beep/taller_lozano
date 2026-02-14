@@ -1,0 +1,158 @@
+/* RESET */
+*{
+    margin:0;
+    padding:10;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+    color:rgb(255, 255, 255);
+    overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:fixed;
+    width:100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.3);
+}
+
+nav h2{
+    color:#81d2f5;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#4377fc;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+    box-shadow:0 0 30px #38bdf8;
+    margin-bottom:20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{ transform:translateY(0px);}
+    50%{ transform:translateY(-15px);}
+    100%{ transform:translateY(0px);}
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin-top:10px;
+    opacity:0.8;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding:25px;
+    border-radius:25px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background: rgba(56,189,248,0.1);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background: rgba(0,0,0,0.3);
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+}
+
+.video-section{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.video-wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(56,189,248,0.6);
+}
+
+.video-wrapper iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+}
