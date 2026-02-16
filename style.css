@@ -156,3 +156,33 @@ footer{
     left: 0;
     border: none;
 }
+.video-card {
+    position: relative;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.video-card img {
+    width: 100%;
+    display: block;
+}
+
+.video-card:hover {
+    transform: scale(1.03);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 20px 30px;
+    border-radius: 50%;
+}
