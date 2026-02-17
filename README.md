@@ -9,11 +9,6 @@ Breve descripcion
 - [Estudios](#requerimientos)
 - [instalacion](#instalacion)
 ---
-## Caracteristicas del proyecto 
-- Funcionalidad 1 
-- Funcionalidad 2
-- Funcionalidad 3
-
 # Proyecto portafolio 
 
 Breve descripcion: Se creara un portafalio con html y css.
